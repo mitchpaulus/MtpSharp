@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MtpSharp", "MtpSharp\MtpSharp.csproj", "{944CE492-2892-432F-A6FD-226A955C9ADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FB2EBB4F-ABD9-4C83-8C63-93534059696E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{944CE492-2892-432F-A6FD-226A955C9ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{944CE492-2892-432F-A6FD-226A955C9ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{944CE492-2892-432F-A6FD-226A955C9ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2EBB4F-ABD9-4C83-8C63-93534059696E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2EBB4F-ABD9-4C83-8C63-93534059696E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2EBB4F-ABD9-4C83-8C63-93534059696E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2EBB4F-ABD9-4C83-8C63-93534059696E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
