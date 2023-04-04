@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <Description>Personal class library of broadly useful code.</Description>
     <PackageId>MitchellPaulus.MtpSharp</PackageId>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Authors>Mitchell T. Paulus</Authors>
     <Company>Command Commissioning, LLC</Company>
     <PackageDescription>Broadly useful C# code.</PackageDescription>
