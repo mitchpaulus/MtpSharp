@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace MtpSharp;
 
-public static class StringExtensions
+public static class Extensions
 {
     public static IEnumerable<string> SplitLines(this string input)
     {
@@ -103,4 +103,25 @@ public static class StringExtensions
     }
 
     public static IEnumerable<(T item, int index)> WithIndex<T>(this IEnumerable<T> list, int startIndex = 0) => list.Select(item => (item, startIndex++));
+    
+    public static void AddRange<T>(this HashSet<T> set, IEnumerable<T> list)
+    {
+        foreach (T item in list) set.Add(item);
+    }
+    
+    /// <summary>Returns the excel column name ("AB") for the integer row (0-based).</summary>
+    public static string IntColToExcelLetter(int columnNumber)
+    {
+        int dividend = columnNumber;
+        string columnName = String.Empty;
+
+        while (dividend > 0)
+        {
+            int modulo = (dividend - 1) % 26;
+            columnName = Convert.ToChar(65 + modulo) + columnName;
+            dividend = (dividend - modulo) / 26;
+        }
+
+        return columnName;
+    }
 }
