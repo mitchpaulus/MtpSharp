@@ -101,4 +101,6 @@ public static class StringExtensions
 
         return 0;
     }
+
+    public static IEnumerable<(T item, int index)> WithIndex<T>(this IEnumerable<T> list, int startIndex = 0) => list.Select(item => (item, startIndex++));
 }

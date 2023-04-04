@@ -33,4 +33,17 @@ public class Tests
         int result = string1.NaturalCompare(string2);
         Assert.That(result, Is.EqualTo(-1));
     }
+
+    [Test]
+    public void TestWithIndex()
+    {
+        List<string> test = new() { "File 2", "File 10", "File 1" };
+
+        int zeroIndex = 0;
+        foreach ((string item, int index) item in test.WithIndex(2))
+        {
+            Assert.That(item.index, Is.EqualTo(zeroIndex + 2));
+            zeroIndex++;
+        }
+    }
 }
